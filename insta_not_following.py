@@ -1,7 +1,7 @@
 import json
 
-followers_file = '/Users/irvindorado/Documents/Coding/Python/followers_and_following/followers_1.json'
-following_file = '/Users/irvindorado/Documents/Coding/Python/followers_and_following/following.json'
+followers_file = '/Users/File_Path/followers_and_following/followers_1.json'
+following_file = '/Users/File_Path/followers_and_following/following.json'
 
 with open(followers_file) as f:
     insta_followers = json.load(f)
