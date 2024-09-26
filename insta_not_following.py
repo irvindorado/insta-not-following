@@ -6,7 +6,6 @@ class InstaFollowTracker:
         self.following_file = following_file
 
     def load_data(self):
-    
         with open(self.followers_file) as f:
             insta_followers = json.load(f)
         self.followers = self.extract_values(insta_followers)
@@ -34,7 +33,6 @@ class InstaFollowTracker:
         non_followers = self.find_non_followers()
         print("These are the accounts that are not following me:\n", *non_followers, sep='\n')
         print('\n')
-
 
 #Usage
 followers_file = '/Users/File_Path/followers_and_following/followers_1.json'
